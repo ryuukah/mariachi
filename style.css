@@ -1,0 +1,85 @@
+body {
+  background: #191919;
+  font-family: "MS UI Gothic", "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* window */
+.window {
+  width: 420px;
+  background: #f6d6dc;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0px black;
+}
+
+/* title bar */
+.title-bar {
+  background: linear-gradient(to right, #ff4d88, #ff80ab);
+  color: white;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+/* fake window buttons */
+.buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  width: 14px;
+  height: 14px;
+  background: #ffc0cb;
+  border: 1px solid black;
+}
+
+/* content */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+
+/* text */
+.text {
+  text-align: center;
+  flex: 1;
+}
+
+#message {
+  margin: 0;
+  font-size: 18px;
+}
+
+.face {
+  margin: 5px 0;
+}
+
+/* button */
+button {
+  margin-top: 10px;
+  padding: 4px 18px;
+  border: 2px solid black;
+  background: #ffdbe3;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 black;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
